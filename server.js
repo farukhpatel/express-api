@@ -1,6 +1,11 @@
 const express=require('express');
 const app=express();
 const errorHandler=require('./middlewares/errorHandler');
+const CustomErrorHandler=require('./middlewares/CustomErrorHandler');
+
+
+//database connection
+const db=require('./connection/db');
 //for json data read in from req
 app.use(express.json());
 
