@@ -1,7 +1,6 @@
 const express=require('express');
 const app=express();
 const errorHandler=require('./middlewares/errorHandler');
-const CustomErrorHandler=require('./middlewares/CustomErrorHandler');
 
 
 //database connection

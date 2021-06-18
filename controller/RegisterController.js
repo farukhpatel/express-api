@@ -42,7 +42,7 @@ const registerController = {
             password: hashPassword
         });
         const result=await user.save(req.body);
-        access_toen=JwtService.sign({'id':result._id,'role':result.rolr});
+        access_toen=JwtService.sign({'id':result._id,'role':result.role});
 
        } catch (error) {
            return next(error);
